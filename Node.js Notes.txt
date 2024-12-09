@@ -1,0 +1,29 @@
+Node.js Notes
+-Node.js is a runtime environment that allows developers to create server-side 
+applications using the same JavaScript language used for frontend development
+
+Difference between common js and es modules
+
+CommonJS                        vs                  ES modules
+'require'/'exports'    importing and exporting     'import'/'export'
+'Synchronous'              Module Loading          'Asynchronous'
+
+
+Syntax:
+exporting
+CommonJS:                       ES modules:
+module.exports = {              const post = [
+  generateRandomNumber,             { id: 1, title: "Post one" },
+  celciusToFahrenheit,              { id: 2, title: "Post two" }
+};                              ];
+                                export const getPosts = () => post;
+
+importing:
+CommonJS:
+const { celciusToFahrenheit, generateRandomNumber } = require("./utils");
+
+ES modules:
+import { getPosts } from "./postController.js";
+
+nodemon
+-a package wherein it automatically refreshes the server after saving 

@@ -27,3 +27,23 @@ import { getPosts } from "./postController.js";
 
 nodemon
 -a package wherein it automatically refreshes the server after saving 
+
+.env
+- serves as a centralized location to store configuration settings for your project.
+- file in a Node.js project is used to store environment variables in a key-value format. These environment variables are commonly
+ used to configure an application without hardcoding sensitive or environment-specific data into the source code.
+
+Common uses of .env files:
+1. Storing Secrets:
+  - API keys, database credentials, tokens, and other sensitive information.
+2. Enviroment-Specific Configuration:
+  - Different configurations for development, testing, and production environments.
+3. Simplifying Deployment:
+  - Centralized configuration management for server settings.
+
+to access the .env file
+first:
+-you have to change the package.json script add --env-file=.env "start": "nodemon --env-file=.env server.js"
+second: 
+-you have to access the .env file from the server.js or file that contains the server. Use "process.env.PORT".
+  Example: const PORT = process.env.PORT;

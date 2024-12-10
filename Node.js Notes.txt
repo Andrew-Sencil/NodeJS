@@ -47,3 +47,9 @@ first:
 second: 
 -you have to access the .env file from the server.js or file that contains the server. Use "process.env.PORT".
   Example: const PORT = process.env.PORT;
+
+These two can be used only in ES module:
+__filename 
+- this will return the current filename with the path
+__dirname
+- this will return the curent path of the file that you are in

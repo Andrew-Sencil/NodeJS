@@ -53,3 +53,18 @@ __filename
 - this will return the current filename with the path
 __dirname
 - this will return the curent path of the file that you are in
+
+Middleware: 
+- are modules or functions have access to the request and response object because 
+it sit in the middle of incoming requests and outgoing responses.
+
+- refers to a concept where functions can be used to process incoming requests 
+before they reach their final destination and handle outgoing responses 
+before they are sent back to the client.
+
+-in a practical example, it is like a waiter in a restaurant where it 
+sends the command of a customer(user) to the chef(DB).
+
+Events Emitter - it is great for building a real-time applications, it is used to
+create and handle custom events.
+
